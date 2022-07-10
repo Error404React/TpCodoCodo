@@ -1,11 +1,13 @@
+import React from 'react'
 import './App.css';
+import {NewsList} from './components/NewsList'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        HOLA MUNDO
-      </header>
+    <div>
+      <header className='title'>Titulares de Argentina</header>
+      <main> <NewsList/></main>
     </div>
   );
 }
