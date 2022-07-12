@@ -1,7 +1,7 @@
 import {getHeadlines} from '../service/apiCalls';
 import {NewsItem} from "./NewsItem";
 import { useState, useEffect, React } from "react";
-import './NewsList.css';
+import '../styles/NewsList.css';
 
 function NewsList(){
   const [news, setNews] = useState([]);
