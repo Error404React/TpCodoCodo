@@ -8,9 +8,9 @@ function NewsList(){
   useEffect(() => {getHeadlines().then(setNews);}, []);
   return (
     <>
-      <ul className="newsGrid" >
+      <ul>
         {news.length === 0 ? (<div>Cargando...</div>) 
-          : (<section> {news.map((n) => (<NewsItem key={news.indexOf(n)} {...n} /> ))}</section>)
+          : (<section className="newsGrid" > {news.map((n) => (<NewsItem key={news.indexOf(n)} {...n} /> ))}</section>)
         }
       </ul>
     </>
