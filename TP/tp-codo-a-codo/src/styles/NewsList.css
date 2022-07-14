@@ -1,14 +1,13 @@
 .newsGrid{
-    display:grid;
-    grid-template-columns:repeat(auto-fill, 250px);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
     gap: 40px;
     padding: 40px;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-
-@media (max-width:560px){
+/* @media (max-width:560px){
     .newsGrid{
         grid-template-columns: 100%;
     }
-}
+} */

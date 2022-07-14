@@ -5,12 +5,18 @@ import '../styles/NewsList.css';
 
 function NewsList(){
   const [news, setNews] = useState([]);
-  useEffect(() => {getHeadlines().then(setNews);}, []);
+  useEffect(() =>
+  {
+    getHeadlines('sport').then(setNews);
+  }, []);
+
   return (
     <>
       <ul className="newsGrid" >
-        {news.length === 0 ? (<div>Cargando...</div>) 
-          : (<section> {news.map((n) => (<NewsItem key={news.indexOf(n)} {...n} /> ))}</section>)
+        {
+          news.length === 0 ? (<div>Cargando...</div>) 
+          :
+          news.map((n) => (<NewsItem key={news.indexOf(n)} {...n} />))
         }
       </ul>
     </>
