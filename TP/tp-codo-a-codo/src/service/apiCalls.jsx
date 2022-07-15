@@ -1,3 +1,4 @@
+
 const links = {
     'general': 'https://newsapi.org/v2/top-headlines?country=ar&category=general&apiKey=7412f6538eed41b9976f71c50ad81307',
     'business': 'https://newsapi.org/v2/top-headlines?country=ar&category=business&apiKey=7412f6538eed41b9976f71c50ad81307',
@@ -15,4 +16,4 @@ async function getHeadlines(category = 'general') {
 }
 
 export {getHeadlines}
-  
+
