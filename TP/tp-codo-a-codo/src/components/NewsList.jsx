@@ -3,9 +3,11 @@ import {NewsItem} from "./NewsItem";
 import { useState, useEffect, React } from "react";
 import '../styles/NewsList.css';
 
-function NewsList(){
+function NewsList(props){
   const [news, setNews] = useState([]);
-  useEffect(() => {getHeadlines().then(setNews);}, []);
+  useEffect(() => {
+    // eslint-disable-next-line
+    getHeadlines(props.category).then(setNews);}, [props.category]);
   return (
     <>
       <ul>
