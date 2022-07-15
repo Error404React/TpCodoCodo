@@ -17,7 +17,13 @@ function App() {
         <Nav />
         <main>
           <Routes>
-            <Route path="/" element={<NewsList/>} />
+            <Route path="/" element={<NewsList category='general'/>} />
+            <Route path="/entertainment" element={<NewsList category='entertainment'/>} />
+            <Route path="/business" element={<NewsList category='business'/>} />
+            <Route path="/health" element={<NewsList category='health'/>} />
+            <Route path="/science" element={<NewsList category='science'/>} />
+            <Route path="/sports" element={<NewsList category='sports'/>} />
+            <Route path="/technology" element={<NewsList category='technology'/>} />
           </Routes>
         </main>
       </BrowserRouter>
