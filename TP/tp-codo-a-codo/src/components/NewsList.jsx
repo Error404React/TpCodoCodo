@@ -11,7 +11,7 @@ function NewsList(props){
   return (
     <>
       <ul>
-        {news.length === 0 ? (<div>Cargando...</div>) 
+        {news.length === 0 ? (<div>Cargando ... </div>) 
           : (<section className="newsGrid" > {news.map((n) => (<NewsItem key={news.indexOf(n)} {...n} /> ))}</section>)
         }
       </ul>
