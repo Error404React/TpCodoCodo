@@ -7,11 +7,13 @@ function NewsList(props){
   const [news, setNews] = useState([]);
   useEffect(() => {
     // eslint-disable-next-line
-    getHeadlines(props.category).then(setNews);}, [props.category]);
+    setNews([]);
+    getHeadlines(props.category).then(setNews);
+  }, [props.category]);
   return (
     <>
       <ul>
-        {news.length === 0 ? (<div>Cargando...</div>) 
+        {news.length === 0 ? (<div>Cargando ... </div>) 
           : (<section className="newsGrid" > {news.map((n) => (<NewsItem key={news.indexOf(n)} {...n} /> ))}</section>)
         }
       </ul>
