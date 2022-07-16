@@ -6,7 +6,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import { Nav } from './components/Nav';
+import NavBar from './components/Navbar';
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <header className='titleNews'>NEWS ERROR 404</header>
-        <Nav />
+        <NavBar />
         <main>
           <Routes>
             <Route path="/" element={<NewsList category='general'/>} />

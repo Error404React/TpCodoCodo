@@ -13,6 +13,7 @@
     height: auto;
 }
 
+
 @media (max-width: 560px){
     .newsImage{
         width: 95%;

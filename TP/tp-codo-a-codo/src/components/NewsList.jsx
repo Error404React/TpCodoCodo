@@ -10,9 +10,13 @@ function NewsList(props){
     getHeadlines(props.category).then(setNews);}, [props.category]);
   return (
     <>
-      <ul>
-        {news.length === 0 ? (<div>Cargando ... </div>) 
-          : (<section className="newsGrid" > {news.map((n) => (<NewsItem key={news.indexOf(n)} {...n} /> ))}</section>)
+      <ul className='newsUl'>
+        {
+          news.length === 0
+            ?
+          (<div>Cargando ... </div>) 
+            :
+          (<section className="newsGrid"> {news.map((n) => (<NewsItem key={news.indexOf(n)} {...n} />))}</section>)
         }
       </ul>
     </>
