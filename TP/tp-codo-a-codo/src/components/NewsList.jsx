@@ -7,7 +7,9 @@ function NewsList(props){
   const [news, setNews] = useState([]);
   useEffect(() => {
     // eslint-disable-next-line
-    getHeadlines(props.category).then(setNews);}, [props.category]);
+    getHeadlines(props.category).then(setNews);
+  }, [props.category]);
+  
   return (
     <>
       <ul>
