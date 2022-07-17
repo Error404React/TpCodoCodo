@@ -7,9 +7,17 @@ function NewsList(props){
   const [news, setNews] = useState([]);
   useEffect(() => {
     // eslint-disable-next-line
-    getHeadlines(props.category).then(setNews);}, [props.category]);
+    getHeadlines(props.category).then(setNews);
+    console.log(props.category)
+  }, [props.category]);
+  
   return (
     <>
+      <p className='categoryTitle'>
+        {
+          props.category.toUpperCase()
+        }
+      </p>
       <ul className='newsUl'>
         {
           news.length === 0
