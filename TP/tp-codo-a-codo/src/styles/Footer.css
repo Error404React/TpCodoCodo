@@ -28,3 +28,9 @@
 .pFooter a{
     text-decoration: none;
 }
+
+@media (max-width: 991px) {
+    .titleFooter{
+        width: 100%;
+    }
+}
