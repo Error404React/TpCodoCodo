@@ -16,11 +16,13 @@ function NewsItem(news) {
         <p className='newsContent'>
           {news.description}
         </p>
+        <button className='newsButtonFuente'
+          onClick={() => setOpen(true)}> VER FUENTE
+        </button>
+        {
+          open && <NewsWindow url={news.url} />
+        }
       </div>
-          {/* {
-            news.author &&
-            <p className='newsAuthor'>AUTOR: {news.author} </p>
-          } */}
       {
         news.urlToImage != null
         ?
@@ -28,16 +30,14 @@ function NewsItem(news) {
         :
         <PhotoPlaceholder />
       }
-
-      {/* <button className='newsButtonFuente'
-        onClick={() => setOpen(true)}> VER FUENTE
-      </button> */}
-      {/* {
-        open && <NewsWindow url={news.url} />
-      } */}
     </li>
   );
 }
 
 export {NewsItem};
 
+
+            // { {
+            //   news.author &&
+            //   <p className='newsAuthor'>AUTOR: {news.author} </p>
+            // } }

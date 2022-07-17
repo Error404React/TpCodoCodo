@@ -4,8 +4,8 @@
     font-weight: bolder;
     border-bottom: 4px solid black;
     padding: .4rem 0 .4rem 0;
-    margin-left: 1.3rem;
-    margin-right: 1.3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     margin-top: 3.5rem;
 }
 
@@ -15,9 +15,10 @@
 
 .newsGrid{
     display:grid;
-    grid-template-rows:repeat(auto-fill, 190px);
-    grid-gap: 40px;
+    grid-template-rows:repeat(auto-fill, 260px);
+    grid-gap: 20px;
     padding: 40px;
+    width: 70%;
     justify-content: center;
 }
 

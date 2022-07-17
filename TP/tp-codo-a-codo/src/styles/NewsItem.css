@@ -2,6 +2,7 @@
     display: flex;
     border-bottom: 1px solid rgba(175, 173, 173, 0.726);
     padding-bottom: 1.5rem;
+    width: auto;
 }
 
 .divTitleDescription{
@@ -9,6 +10,8 @@
     flex-direction: column;
     margin: .5rem;
     width: 50%;
+    padding-bottom: 2rem;
+    position: relative;
 }
 
 .newsTitle{
@@ -18,9 +21,23 @@
 
 .newsImage{
     border-radius: 5px;
-    margin-left: 3rem;
-    width :280px;
+    margin-left: 12rem;
+    width :300px;
     height: auto;
+}
+
+.newsButtonFuente{
+    width: 105px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.newsButtonFuente:hover{
+    background-color: black;
+    color: white;
+    transition: .5s;
 }
 
 
