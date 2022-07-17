@@ -8,7 +8,6 @@
 .divTitleDescription{
     display: flex;
     flex-direction: column;
-    margin: .5rem;
     width: 50%;
     padding-bottom: 2rem;
     position: relative;
@@ -22,7 +21,7 @@
 .newsImage{
     border-radius: 5px;
     margin-left: 12rem;
-    width :300px;
+    width :370px;
     height: auto;
 }
 
@@ -32,6 +31,7 @@
     bottom: 0;
     left: 0;
     border-radius: 10px;
+    border: 2px solid black;
 }
 
 .newsButtonFuente:hover{
@@ -43,7 +43,42 @@
 
 @media (max-width: 560px){
     .newsImage{
-        width: 95%;
-        height: auto;   
+        width: 400px;
+        margin: 0 auto !important;
+        height: auto;
+        align-items: center;   
+    }
+
+    .newsCard{
+        flex-direction: column;
+    }
+
+    .newsContent{
+        display: none;
+    }
+
+    .newsButtonFuente{
+        bottom: 0;
+    }
+
+    .newsTitle{
+        text-align: center;
+        justify-content: center;
+        width: 500px;
+        margin-bottom: 0;
+        font-size: 1.5rem;
+    }
+}
+
+
+
+@media (max-width: 991px){
+    .divTitleDescription{
+        width: 50%;
+    }
+
+    .newsImage{
+        margin-left: 3rem;
+        width: 400px;
     }
 }

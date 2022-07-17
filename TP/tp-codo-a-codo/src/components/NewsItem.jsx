@@ -35,9 +35,3 @@ function NewsItem(news) {
 }
 
 export {NewsItem};
-
-
-            // { {
-            //   news.author &&
-            //   <p className='newsAuthor'>AUTOR: {news.author} </p>
-            // } }

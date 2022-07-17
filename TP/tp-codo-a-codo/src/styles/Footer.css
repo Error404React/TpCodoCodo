@@ -1,0 +1,30 @@
+.footerNews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgba(146, 146, 146, 0.699);
+    background-color: #f0f3f5;
+    height: 150px;
+    margin-top: 5rem;
+}
+
+.titleFooter{
+    color: #f68e1e;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: .5rem;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-bottom: 0;
+    width: 1680px;
+    border-bottom: 1px solid rgba(146, 146, 146, 0.699);
+}
+
+.pFooter{
+    padding-top: 1.7rem;
+    font-size: 1.2rem;
+}
+
+.pFooter a{
+    text-decoration: none;
+}

@@ -7,6 +7,7 @@ import {
   Route,
 } from "react-router-dom";
 import NavBar from './components/Navbar';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Route path="/technology" element={<NewsList category='technology'/>} />
           </Routes>
         </main>
+        <Footer />
       </BrowserRouter>
     </div>
   );
