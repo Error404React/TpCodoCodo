@@ -18,7 +18,8 @@
     grid-template-rows:repeat(auto-fill);
     grid-gap: 20px;
     padding: 40px;
-    width: 70%;
+    width: 75%;
+    margin: 0 auto !important;
     justify-content: center;
 }
 

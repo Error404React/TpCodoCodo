@@ -10,3 +10,13 @@
     font-weight: bolder;
 }
 
+@media (max-width: 991px){
+    .titleNews{
+        width: 100%;
+    }
+
+    .App{
+        width: 100%;
+    }
+}
+
