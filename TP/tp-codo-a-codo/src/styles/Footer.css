@@ -31,6 +31,10 @@
 
 @media (max-width: 991px) {
     .titleFooter{
+        width: 90%;
+    }
+
+    .footerNews{
         width: 100%;
     }
 }
