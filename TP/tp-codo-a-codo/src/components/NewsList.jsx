@@ -8,12 +8,23 @@ function NewsList(props){
   useEffect(() => {
     // eslint-disable-next-line
     getHeadlines(props.category).then(setNews);
+    console.log(props.category)
   }, [props.category]);
+  
   return (
     <>
-      <ul>
-        {news.length === 0 ? (<div>Cargando ... </div>) 
-          : (<section className="newsGrid" > {news.map((n) => (<NewsItem key={news.indexOf(n)} {...n} /> ))}</section>)
+      <p className='categoryTitle'>
+        {
+          props.category.toUpperCase()
+        }
+      </p>
+      <ul className='newsUl'>
+        {
+          news.length === 0
+            ?
+          (<div className='newsCargando'>Cargando ... </div>) 
+            :
+          (<section className="newsGrid"> {news.map((n) => (<NewsItem key={news.indexOf(n)} {...n} />))}</section>)
         }
       </ul>
     </>

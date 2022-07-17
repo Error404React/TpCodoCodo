@@ -4,18 +4,34 @@ import {NewsWindow} from './NewsWindow';
 import {PhotoPlaceholder} from './PhotoPlaceholder'
 
 function NewsItem(news) {
-    const [open, setOpen] = useState();
-    return (
-        <li className="newsCard" >  
-            {news.urlToImage != null ? <img className='newsImage' src={news.urlToImage} alt=""/>
-            :<PhotoPlaceholder/>}
-            <p>{news.title}</p> 
-            {news.author && <p>AUTOR: {news.author} </p>}
-            <button onClick={() => setOpen(true)}>VER FUENTE</button>
-            {open && <NewsWindow url={news.url}/> }
-        </li>
-    );
+  const [open, setOpen] = useState();
+  
+  return (
+    <li className="newsCard" >  
+      {console.log(news)}
+      <div className='divTitleDescription'>
+        <p className='newsTitle'>
+          {news.title}
+        </p> 
+        <p className='newsContent'>
+          {news.description}
+        </p>
+        <button className='newsButtonFuente'
+          onClick={() => setOpen(true)}> VER FUENTE
+        </button>
+        {
+          open && <NewsWindow url={news.url} />
+        }
+      </div>
+      {
+        news.urlToImage != null
+        ?
+        <img className='newsImage' src={news.urlToImage} alt="" />
+        :
+        <PhotoPlaceholder />
+      }
+    </li>
+  );
 }
 
 export {NewsItem};
-
